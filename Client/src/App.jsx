@@ -1,5 +1,12 @@
 import React from "react";
 import {BrowserRouter,Route, Routes} from "react-router-dom";
+import Navbar from "./components/Navbar.jsx"
+import About from "./components/About.jsx"
+import Home from "./components/Home.jsx"
+import Services from "./components/Services.jsx"
+import CheckUp from "./components/CheckUp.jsx"
+import ModelAnalysis from "./components/ModelAnalysis.jsx"
+import Footer from "./components/Footer.jsx"
 import "./index.css";
 const App = () => {
   return (
@@ -10,7 +17,7 @@ const App = () => {
         <div className="flex-1 max-w-screen-2xl pt-[70px] mx-auto w-full">
         <Routes>
           <Route element={<About />} path={"/about"} />
-          <Route element={<Home />} path={"/home"} />
+          <Route element={<Home />} path={"/"} />
           <Route element={<Services />} path={"/services"} />
           <Route element={<CheckUp />} path={"/checkup"} />
           <Route element={<ModelAnalysis />} path={"/analysis"} />
