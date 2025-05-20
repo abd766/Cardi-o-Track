@@ -8,25 +8,27 @@ import CheckUp from "./components/CheckUp.jsx"
 import ModelAnalysis from "./components/ModelAnalysis.jsx"
 import Footer from "./components/Footer.jsx"
 import "./index.css";
+import Contact from "./components/Contact.jsx";
 const App = () => {
   return (
-    <div className="">
+    // <div className="">
       <BrowserRouter>
       <Navbar />
-      <div className="flex flex-col w-full min-h-screen">
-        <div className="flex-1 max-w-screen-2xl pt-[70px] mx-auto w-full">
+      <div className="bg-black text-white flex flex-col w-full min-h-screen">
+        <div className="flex-1 max-w-screen-2xl pt-[70px] mx-auto w-full ">
         <Routes>
           <Route element={<About />} path={"/about"} />
           <Route element={<Home />} path={"/"} />
           <Route element={<Services />} path={"/services"} />
           <Route element={<CheckUp />} path={"/checkup"} />
           <Route element={<ModelAnalysis />} path={"/analysis"} />
+          <Route element={<Contact />} path={"/contact"} />
         </Routes>
         </div>
         <Footer />
       </div>
       </BrowserRouter>
-    </div>
+    // </div>
   );
 };
 
