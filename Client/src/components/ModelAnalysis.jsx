@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Loader from './Loader';
 
+const MODEL_URI = import.meta.env.VITE_BACKEND_URI;
+
 const ModelAnalysis = () => {
   const [metrics, setMetrics] = useState(null);
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:5000/metrics')
+    axios.get(`${MODEL_URI}/metrics`)
       .then(res => setMetrics(res.data))
       .catch(err => console.error('Failed to load metrics:', err));
   }, []);
