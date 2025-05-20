@@ -6,7 +6,7 @@ const ModelAnalysis = () => {
   const [metrics, setMetrics] = useState(null);
 
   useEffect(() => {
-    axios.get('https://heart-backend-em2f.onrender.com/metrics')
+    axios.get('http://127.0.0.1:5000/metrics')
       .then(res => setMetrics(res.data))
       .catch(err => console.error('Failed to load metrics:', err));
   }, []);
