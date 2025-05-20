@@ -13,7 +13,6 @@ const Navbar = () => {
         {/* Navigation Links */}
         <div className="flex gap-6 text-white text-xl font-semibold">
           <Link to="/" className="cursor-pointer">Home</Link>
-          <Link to="/about" className="cursor-pointer">About</Link>
           <Link to="/services" className="cursor-pointer">Services</Link>
           <Link to="/checkup" className="cursor-pointer">CheckUp</Link>
           <Link to="/analysis" className="cursor-pointer">Model Analysis</Link>
