@@ -15,7 +15,7 @@ const App = () => {
       <BrowserRouter>
       <Navbar />
       <div className="bg-black text-white flex flex-col w-full min-h-screen">
-        <div className="flex-1 max-w-screen-2xl pt-[70px] mx-auto w-full ">
+        <div className="flex items-center justify-center max-w-screen-2xl pt-[70px] mx-auto w-full ">
         <Routes>
           <Route element={<Home />} path={"/"} />
           <Route element={<Services />} path={"/services"} />

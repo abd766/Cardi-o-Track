@@ -25,7 +25,7 @@ const Home = () => {
         </div>
 
         {/* About Section */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-12 md:gap-8">
+        <div className="flex flex-col md:flex-row items-center justify-between md:gap-8">
           <div className="md:w-1/2">
             <h2 className="text-2xl font-semibold text-slate-200 mb-4">
               What is Cardi-o-Track?
